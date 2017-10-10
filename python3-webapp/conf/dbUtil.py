@@ -175,7 +175,3 @@ class Mysql(object):
         self._cursor.close()
         self._conn.close()
 
-if __name__ == "__main__":
-     mysql = Mysql()
-     res = mysql.getOne(sql='select * from user')
-     print(res)
